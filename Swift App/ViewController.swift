@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Matt Ennico on 10/12/17.
-//  Copyright © 2017 Matt Ennico. All rights reserved.
+//  Copyright © 2017 Matt Ennico. All rights reserved..
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(sender: AnyObject) {
         
         tapCount = tapCount + 1
-        if tapCount >= 10 {
+        if tapCount >= 20 {
             theLabel.text = "You tapped the button 10x"
         }
         print(tapCount)
