@@ -30,30 +30,44 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3s-hk-5SA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTM-dZ-vb5">
-                                <rect key="frame" x="268" y="111" width="65" height="30"/>
-                                <state key="normal" title="BUDDON"/>
-                                <connections>
-                                    <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGv-Xu-2Oe"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfp-ZL-uAZ">
+                                <rect key="frame" x="251" y="193" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4tB-td-UBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ks-Hg-SMj">
+                                <rect key="frame" x="251" y="138" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="c81-xz-ACR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LTM-dZ-vb5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="70F-rA-HGt"/>
+                            <constraint firstItem="nfp-ZL-uAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6j4-eV-8lD"/>
                             <constraint firstItem="qBk-4P-c2U" firstAttribute="top" secondItem="7mT-4n-mrU" secondAttribute="bottom" constant="10" id="Jbt-Ns-qeK"/>
                             <constraint firstItem="7mT-4n-mrU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="UTB-IQ-FL2"/>
-                            <constraint firstItem="LTM-dZ-vb5" firstAttribute="top" secondItem="qBk-4P-c2U" secondAttribute="bottom" constant="10" id="VcY-Dw-HNi"/>
+                            <constraint firstItem="5ks-Hg-SMj" firstAttribute="top" secondItem="qBk-4P-c2U" secondAttribute="bottom" constant="37" id="ZUA-Bc-0fJ"/>
+                            <constraint firstItem="nfp-ZL-uAZ" firstAttribute="top" secondItem="5ks-Hg-SMj" secondAttribute="bottom" constant="25" id="ldJ-OR-sIi"/>
                             <constraint firstItem="qBk-4P-c2U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6h-zC-Cqk"/>
                             <constraint firstItem="7mT-4n-mrU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sb6-Ii-WbA"/>
+                            <constraint firstItem="5ks-Hg-SMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xga-42-pjQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="5ks-Hg-SMj" id="U1r-gm-A5U"/>
+                        <outlet property="text2" destination="nfp-ZL-uAZ" id="MRw-97-fwI"/>
                         <outlet property="theLabel" destination="7mT-4n-mrU" id="CSP-Bp-VdD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="261" y="244"/>
         </scene>
     </scenes>
 </document>
